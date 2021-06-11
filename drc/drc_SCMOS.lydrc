@@ -398,7 +398,7 @@ tile_borders(1.um)
 #no_borders
 
 # Use 4 CPU cores
-threads(1)
+threads(4)
 verbose(true)
 
 # Define a new custom function that selects polygons by their number of holes:
@@ -612,7 +612,7 @@ CT.ongrid(0.5*LAMBDA).output("CT_offgrid", "Offgrid vertex on Contact")
 CT.with_angle(0 .. 90).output("CT_angle", "Non 90 degree angle Contact")
 CT.and(GATE).output("CT_and_GATE", "Contact on Gate not allowed")
 CT.not(M1).output("CT_not_M1", "Contact without Metal1 not recommended")
-CT.drc(length != R5_1).output("5.1 CT_width", "5.1 : Exact Contact width : #{R5_1}um")
+# CT.drc(length != R5_1).output("5.1 CT_width", "5.1 : Exact Contact width : #{R5_1}um")
 CT.width(R5_1).output("5.1 CT_width", "5.1 : Exact Contact width : #{R5_1}um")
 CT.without_area(R5_1*R5_1).output("5.1 CT_area", "5.1 : Exact Contact Area : #{R5_1*R5_1}um2")
 CT.space(R5_3, euclidian).output("5.3 CT_space", "5.3 : Contact spacing : #{R5_3}um")
