@@ -1,6 +1,6 @@
 # MOSIS_SCMOS_for_KLayout
 
-## KLayout technology files for MOSIS SCMOS generic process
+## KLayout (version 0.27 or higher) technology files for MOSIS SCMOS generic process
 
  * MOSIS_SCMOS.lyt   : technology and connections description  
  * MOSIS_SCMOS.lyp   : layers color and shape description  
